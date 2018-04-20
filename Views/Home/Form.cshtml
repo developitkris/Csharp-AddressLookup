@@ -1,0 +1,44 @@
+@using AddressLookup.Models;
+
+@{
+  Layout= "Layout";
+ }
+
+<div class="container container-fluid">
+  <h1> To create a new Contact, please fill out the form below in its entirety to successfully add Contact with details.  Submit form once completed, to save Contact into Contacts List.</h1>
+  <form id="inputContact" action="/Output" method="post">
+    <div class="form-group" id="inputDetails">
+    <h3> Contact Details </h3>
+      <label for="firstName"> First name: </label>
+      <input type="text" name="firstName" class="form-control" required>
+      <hr>
+      <label for="lastName"> Last name: </label>
+      <input type="text" name="lastName" class="form-control" required>
+      <hr>
+      <label for="number"> Phone number (format: 000-000-0000): </label>
+      <input type="text" name="number" class="form-control" required>
+      <hr>
+      <label for="email"> Email: </label>
+      <input type="text" name="email" class="form-control" required>
+    </div>
+
+    <div class="form-group" id="inputAddress">
+    <h3> Full Address </h3>
+      <label for="streetNum"> Street Number: </label>
+      <input type="text" name="streetNum" class="form-control" required>
+      <hr>
+      <label for="streetName"> Street Name: </label>
+      <input type="text" name="streetName" class="form-control" required>
+      <hr>
+      <label for="city"> City: </label>
+      <input type="text" name="city" class="form-control" required>
+      <hr>
+      <label for="state"> State: </label>
+      <input type="text" name="state" class="form-control" required>
+      <hr>
+      <label for="zipcode"> Zipcode: </label>
+      <input type="text" name="zipcode" class="form-control" required>
+    </div>
+
+  </form>
+</div>
