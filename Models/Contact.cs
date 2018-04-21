@@ -20,7 +20,7 @@ namespace AddressLookup.Models
       _number= number;
       _email= email;
       _address= address;
-      //_id=count++
+      _id= count++
     }
   }
 }

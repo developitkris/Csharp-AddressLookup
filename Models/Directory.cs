@@ -12,7 +12,7 @@ namespace AddressLookup.Models
     public void Save()
     {
       _myContacts.Add(this);
-      _listID= _myContacts.Count;
+      _listID= _myContacts.Count -1;
     }
 
     public int GetID()
@@ -35,7 +35,7 @@ namespace AddressLookup.Models
     {
       return _fullAddress;
     }
-    
+
     public static List<Contact> GetAllContacts()
     {
       return _myContacts;

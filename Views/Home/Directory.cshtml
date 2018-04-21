@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Contact List</title>
+  </head>
+
+  <body>
+    <div class="container">
+    <div class="jumbotron">
+      <h1><strong> Address Lookup </strong></h1>
+    </div>
+
+    <h1>Contacts:</h1>
+    <ul>
+      @foreach (var Contact in Model)
+      {
+        <h3> @Contact.firstName() @Contact.lastName() </h3>
+        <p> @Contact.number() </p>
+        <p> @Contact.email() </p>
+        <p> @Contact.address() </p>
+      }
+    </ul>
+
+    <ul>
+      @foreach (var Address in Model)
+      {
+        <p>
+        @Address.streetNum()
+        @Address.streetName()
+        </p>
+        <p>
+        @Address.city()
+        @Address.state()
+        @Address.zipcode()
+        </p>
+      }
+    </ul>
+    </div>
+  </body>
+</html>
